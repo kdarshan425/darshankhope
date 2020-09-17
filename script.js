@@ -6,7 +6,7 @@
 //type
 $('document').ready(function(){
             var typed=new Typed('#effect',{
-        strings:["SEARCHER!","RECOMMENDER!","SELECTOR!"],
+        strings:["WEB DEVELOPER!","PROGRAMMER!", "FREE LANCER!","ENTC ENGINEER!"],
         backSpeed:50,
         typeSpeed:50,
         loop:true,
