@@ -5,19 +5,6 @@
  */
 //type
 //type
-$('document').ready(function(){
-            var typed=new Typed('#effect',{
-        strings:["WEB DEVELOPER!","PROGRAMMER!","FREE LANCER!","ENTC ENGINEER!"],
-        backSpeed:50,
-        typeSpeed:50,
-        loop:true,
-             })
-        }) 
-        $(".bar").each(function(){
-            $(this).find(".bar-inner").animate({
-                width: $(this).attr("data-width")
-            },2000)
-        });
 
 
 //smooth nav
