@@ -401,6 +401,22 @@ and open the template in the editor.
                     duration : 1000,
                 });
             </script>
+        <script>
+            $('document').ready(function(){
+            var typed=new Typed('#effect',{
+        strings:["WEB DEVELOPER!","PROGRAMMER!","FREE LANCER!","ENTC ENGINEER!"],
+        backSpeed:50,
+        typeSpeed:50,
+        loop:true,
+             })
+        }) 
+        $(".bar").each(function(){
+            $(this).find(".bar-inner").animate({
+                width: $(this).attr("data-width")
+            },2000)
+        });
+
+        </script>
             <script src="script.js"></script>
             <script src="jquery.2.min.js"></script>
             <script src="typed.js"></script>
