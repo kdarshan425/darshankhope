@@ -440,20 +440,37 @@ p{
         padding-right: 0px;
     }
 
-    .in img{
+    .c1:hover{
+        box-shadow: none;
+    }
+    
+    .card1 .in img{
     transition: all 1.5s ease;
     height:auto;
     width: 250px;
     padding: 0px;
     margin: 0px;
+    
+    .c1 .card1:hover{
+    box-shadow:none;
+    transition: all 1.5s ease-in-out;
+}
+
+   .in:hover img{
+	transform: scale(1.3);
+        box-shadow: none;
+        transition: all 1.5s ease-in-out;
+        
+}
+
 }
 }
 .in{
-    margin: 0px;
+    margin: 10px;
     overflow: hidden;
     
 }
-.in img{
+.card1 .in img{
     transition: all 1.5s ease;
     height:auto;
     width: auto;
@@ -462,10 +479,12 @@ p{
 
 .in:hover img{
 	transform: scale(1.3);
+        box-shadow: none;
+        transition: all 1.5s ease-in-out;
         
 }
 .card1:hover{
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0);
+    box-shadow: none;
     transition: all 1.5s ease-in-out;
 }
 
