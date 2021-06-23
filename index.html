@@ -46,6 +46,18 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Orbitron&family=Poiret+One&family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="uChCzdkI4Ee679nmm9I9kmRXw5_gpaBb-1gamVMB-_E" />
     <style>
+        .projects .owl-carousel .owl-stage {
+            min-height: 400px;
+        }
+        .certificated h4{
+            padding-top:30px;
+            padding-bottom:30px;
+        }
+
+        .awards h4{
+            padding:30px;
+        }
+
         .card1{   
 	width:300px;
         height:500px;
@@ -67,6 +79,82 @@ and open the template in the editor.
             transition: all 1.5s ease-in-out;
             
     }}
+
+    .item{
+        padding-left: 0px;
+        box-shadow: 0px 10px 20px -5px rgb(73 93 207 / 20%);
+    }
+    .item img {
+    border: none;
+    z-index: 55;
+    overflow: visible;
+    width: 100%;
+    height: 200px;
+}
+.wrapper{
+    width: 95%;
+}
+
+.caption{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background: url(img/bg1.jpg)  no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 2s ;
+}
+@media screen and (max-width: 500px) {
+    #home{
+        height: 100vh;
+    width: 100%;
+    background: url(img/bg-mob.jpg)  no-repeat;
+    background-size: cover;
+    transition: all ease-in-out 2s ;
+    }
+}
+.container{
+    height: 100%;
+    width:100%;
+}
+
+.inner{
+    position: relative;
+    
+    
+}
+.ov{
+    background: rgba(255,255,255,0.0);
+    height: auto;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    border: 0px white solid;
+    border-radius: 20px;
+    padding-right:20px;
+}
+
+@media(max-width:768px){
+    .ov{
+    background: rgba(255,255,255,0.0);
+    height: auto;
+    position: absolute;
+    top: 250px;
+    left: auto;
+    border: 0px white solid;
+    border-radius: 20px;
+}}
+.ov1{
+    float: right;
+    height: auto;
+    width: auto;
+    right: 0px;
+    padding-top: 30px;
+}
+
     </style>
 </head>
     <body  onload="myFunction4()" style="margin:0;">
@@ -75,11 +163,10 @@ and open the template in the editor.
             <nav style="background: black">
                 <div class="topnav" id="myTopnav">
                     <a href="#home" style="float:left;font-weight: 900;"><b>DARSHAN KHOPE</b></a>
-                    <a style="height: 60px;"></a>
-
-                    <a  href="#about">ABOUT</a>
+                    <a style="height: 60px;"></a>                    
                     <a  href="#skills">SKILLS</a>
                     <a  href="#exp">EXPERIENCE</a>
+                    <a  href="#projects">PROJECTS</a>
                     <a  href="#certificates">CERTIFICATE</a>
                     <a  href="#awards">AWARDS</a>
                     <a  href="#contact">CONTACT</a>
@@ -100,6 +187,7 @@ and open the template in the editor.
                 <a href="#edu" onclick="dk_close()">EDUCATION</a>
                 <a href="#skills" onclick="dk_close()" >SKILLS</a>
                 <a href="#exp" onclick="dk_close()">EXPERIENCE</a>
+                <a href="#projects" onclick="dk_close()">PROJECTS</a>      
                 <a href="#certificates" onclick="dk_close()">CERTIFICATES</a>
                 <a href="#awards" onclick="dk_close()">AWARDS</a>               
                 <a href="#contact" onclick="dk_close()">CONTACT</a>
@@ -107,19 +195,20 @@ and open the template in the editor.
 
             <div id="home">
                 <div class="inner"> 
-                    <div class="ov1">
-                        <img class="im" src="img/pdk.png">
-                    </div>
-                    <div class="ov" >
-                        <h1 class="abc">DARSHAN SUBHASH KHOPE</h1>
-                        <p>I AM <span id="effect"></span></p>
-                    </div>                
+                    <center>
+                        <div class="ov" >
+                            <h1 class="abc">DARSHAN SUBHASH KHOPE</h1>
+                            <p>I AM <span id="effect"></span></p>
+                        </div>     
+                    </center>                               
                 </div>                    
             </div>
             <div id="about">
                 <div><center><h1  class="ah" ><b>ABOUT ME</b></h1></center></div>
                 <div>
+                    <center>
                     <div class="r1">
+                        <center>
                         <div class="c1" style="padding:0px; ">  
                             <center>
                             <div style="padding:0px;" class="card1">
@@ -158,7 +247,8 @@ and open the template in the editor.
                                 </div>
                             </div>                    
                         </div>
-                    </div>             
+                    </div> 
+                </center>            
                 </div>
             </div>
             <div id="edu">
@@ -194,7 +284,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>                    
-                        <div class="inner1" data-aos="flip-up">
+                        <div class="inner1" >
                             <center>
                                 <h5 style="font-family: 'Raleway', sans-serif;">JR. COLLEGE</h5>
                                 <p>SHRI MHALSAKANT VIDYALAYA</p>
@@ -294,7 +384,7 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>                    
-                        <div class="inner6"  data-aos="flip-up">
+                        <div class="inner6" >
                             <center>
                                 <h2><b>TEAM RED BARON</b></h2>
                                 <h4>DAQ MEMBER</h4>
@@ -322,7 +412,81 @@ and open the template in the editor.
                     </div>                
                 </div>                   
             </div>
-            <div id="certificates">
+            <div id="projects" class="projects">
+                <center>
+                <div>
+                    <center>                   
+                        <h1 class="ch"><b>Projects</b></h1>
+                    </center>
+                </div>
+                <div class="wrapper" style="padding-bottom: 20px;" >
+                    <div class="owl-carousel owl-theme" style="padding-bottom: 20px;">                     
+                        <div class="item" >
+                            <div class="card2">
+                                <img src="img/p1.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>Frontgang</h4>   
+                                    <h4><b>Category : </b>Fullstack</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://github.com/kdarshan425/FrontendGang">View</a> </h4>                                                               
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="item">
+                            <div class="card2">
+                                <img src="img/p2.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>DKForum</h4>   
+                                    <h4><b>Category : </b>Fullstack</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://github.com/kdarshan425/DKForum">View</a> </h4>                                                               
+                                </div>                                  
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card2">
+                                <img src="img/p5.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>Estore</h4>   
+                                    <h4><b>Category : </b>Fullstack</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://github.com/kdarshan425/estorebydk.github.io">View</a> </h4>                                                               
+                                </div>                                 
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card2">
+                                <img src="img/p3.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>Run Time Terror Event</h4>   
+                                    <h4><b>Category : </b>Frontend</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://github.com/kdarshan425/rtt-iet">View</a> </h4>                                                               
+                                </div>                                       
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card2">
+                                <img src="img/p4.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>limited-edition Store</h4>   
+                                    <h4><b>Category : </b>Frontend</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://github.com/kdarshan425/limited-edition">View</a> </h4>                                                               
+                                </div>                                        
+                            </div>
+                        </div>                        
+                        <div class="item">
+                            <div class="card2">
+                                <img src="img/p6.PNG">
+                                <div class="caption">
+                                    <h4><b>Name : </b>Thunderman Shop</h4>   
+                                    <h4><b>Category : </b>Frontend</h4>   
+                                    <h4><b>Project Link : </b> <a href="https://replit.com/@DarshanKhope/th">View</a> </h4>                                                               
+                                </div>                                           
+                            </div>
+                        </div>                        
+                    </div>    
+                </div>    
+            </center>
+            </div>
+            <div class="certificated" id="certificates">
+                <center>
                 <div>
                     <center>                   
                         <h1 class="ch"><b>CERTIFICATES</b></h1>
@@ -373,12 +537,15 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>    
-                </div>    
+                </div>   
+            </center> 
             </div>
-            <div id="awards">
+
+            <div class="awards" id="awards">
+            <center>
                 <div>
                     <center>                   
-                        <h1 class="ch" data-aos="flip-left" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000"><b>AWARDS</b></h1>
+                        <h1 class="ch"><b>AWARDS</b></h1>
                     </center>
                 </div>
                 <div class="wrapper" style="padding-bottom: 50px">
@@ -406,7 +573,7 @@ and open the template in the editor.
             </div>
             <div id="contact">
                 <center style="padding-top: 0px;">
-                    <h1  class="ch" data-aos="flip-left" data-aos-easing="ease-in-out-cubic" data-aos-duration="2000"><b>Contact Me</b></h1>
+                    <h1  class="ch" ><b>Contact Me</b></h1>
                 </center>
                 <div  class="container " style=" padding-bottom: 50px">
                     <center>
@@ -431,7 +598,8 @@ and open the template in the editor.
                             </div>                                 
                         </form>
                     </center>                
-                </div>            
+                </div>   
+            </center>         
             </div>
             <footer class="container" style="background: black;padding: 24px; width: 100%">
                 <center>
