@@ -51,7 +51,7 @@ $(document).ready(function(){
    var myVar;
 
 function myFunction4() {
-  myVar = setTimeout(showPage, 500);
+  myVar = setTimeout(showPage, 0);
 }
 
 function showPage() {
